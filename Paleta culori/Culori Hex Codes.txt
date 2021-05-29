@@ -1,0 +1,16 @@
+Negru: #121212
+Gri inchis: #343434
+Gri deschis: #F0F0F0
+
+Albastru inchis: #2F2E41
+Albastru LOGO: #100ABF
+Albastru deschis: #627AC9
+Albastru foarte deschis:#CCD2ED
+
+Galben: #FFFF00
+Galben deschis: #FFFFA4
+Galben foarte deschis: #FFFFDB
+
+Galbui LOGO: #EFF2D5
+
+Alb pur: #FFFFFF

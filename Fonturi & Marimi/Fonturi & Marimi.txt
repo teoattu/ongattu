@@ -1,0 +1,25 @@
+Fonturi folosite:
+
+> Headings, Navigation Bar & altele: Baloo 2
+
+> Paragrafe, propozitii & altele: Lato
+
+> Grosimi: Light, Regular, Medium, SemiBold, Bold
+
+
+Marimi & Spatiere intre randuri(aici o sa observi niste pattern-uri):
+
+> 75pt & 80 Line Space
+> 40pt & 55 LS
+> 32pt & 40 LS
+> 25pt & 35 
+> 20pt & 35 LS
+> ! exista si mici exceptii, pe care le ai in poza. Ti-am adaugat si o poza dupa care sa te ghidezi si in celelalte pagini
+
+
+
+
+P.S.:
+
+Am scris altele pentru ca nu stiam in ce categorie sa le bag.
+Nu toate grosimile fonturilor au fost folosite momentan (26/05/2021).
