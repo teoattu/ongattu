@@ -22,21 +22,21 @@
 			<img class="logo" alt="attu logo" src="./images/logoNoBg.png"/>
 		</li>
 		{#if windowWidth > 720 || isOpen}
-		<li class="menu__item">
-			<h4>Despre Noi</h4>
-		</li>
-		<li class="menu__item">
-			<h4>Activitățile Noastre	</h4>
-		</li>
-		<li class="menu__item">
-			<h4>Implică-te</h4>
-		</li>
-		<li class="menu__item">
-			<h4>Contact</h4>
-		</li>
-		<li>
-			<button class="btn__primary">Donează</button>
-		</li>
+			<li class="menu__item">
+				<h4>Despre Noi</h4>
+			</li>
+			<li class="menu__item">
+				<h4>Activitățile Noastre	</h4>
+			</li>
+			<li class="menu__item">
+				<h4>Implică-te</h4>
+			</li>
+			<li class="menu__item">
+				<h4>Contact</h4>
+			</li>
+			<li>
+				<button class="btn__primary">Donează</button>
+			</li>
 		{/if}
 	</ul>
 </nav>
