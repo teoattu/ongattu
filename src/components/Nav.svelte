@@ -1,6 +1,7 @@
 <script>
 
 	import { onMount } from 'svelte';
+	import Button from './Button.svelte'
 
 	import '../css/global.css';
 	
@@ -9,7 +10,7 @@
 
 	onMount(()=> {
 		if(typeof window !== undefined) {
-			windowWidth =  window.innerWidth;
+			windowWidth = window.innerWidth;
 		}
 	})
 	$:console.log(windowWidth)
@@ -35,7 +36,7 @@
 				<h4>Contact</h4>
 			</li>
 			<li>
-				<button class="btn__primary">Donează</button>
+				<Button type="primary">Donează</Button> 
 			</li>
 		{/if}
 	</ul>
@@ -49,7 +50,8 @@ nav {
   height: 64px;
 }
 nav > ul {
-  padding-top: 1rem;
+	margin: 0;
+	padding: 0;
   display: flex;
   justify-content: space-around;
 }
@@ -58,8 +60,18 @@ nav > ul > li {
   justify-content: center;
   align-items: center;
 }
+li:first-child{
+	padding: 1rem 0;
+}
 ul {
   list-style: none;
+}
+@media only screen and (max-width: 720px) {
+	nav > ul > li {
+		padding: 0.25rem 0;
+		width: 100%;
+		background-color: #ffffff8f;
+	}
 }
 </style>
 

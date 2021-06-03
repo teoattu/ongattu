@@ -8,13 +8,15 @@
   margin: 0;
   padding: 0;
   --main-yellow-color: #FFFF00;
+  --main-blue-color: #100ABF;
+  --sec-blue-color: #627AC9;
 } 
 body {
   margin: 0;
 }
 h1,h2,h3,h4 {
   font-family: "Baloo 2", cursive;
-  font-weight: 500;
+  font-weight: 700;
   margin: 0;
   
 }
@@ -36,17 +38,6 @@ h4 {
   width: 80px;
 }
 
-
-
-.btn__primary {
-  padding: 0.5rem 2rem;
-  border-radius: 10000px;
-  font-size: 1rem;
-  font-weight: 600;
-  border: none;
-  font-family: "Baloo 2";
-  background-color: var(--main-yellow-color);
-}
 
 @media (max-width: 720px) {
   nav > ul {
