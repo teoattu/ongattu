@@ -8,6 +8,8 @@ import babel from '@rollup/plugin-babel';
 import { terser } from 'rollup-plugin-terser';
 import config from 'sapper/config/rollup.js';
 import pkg from './package.json';
+import { svelteSVG } from "rollup-plugin-svelte-svg";
+
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
@@ -23,6 +25,7 @@ export default {
 		input: config.client.input(),
 		output: config.client.output(),
 		plugins: [
+			svelteSVG(),
 			replace({
 				preventAssignment: true,
 				values:{
@@ -76,6 +79,7 @@ export default {
 		input: config.server.input(),
 		output: config.server.output(),
 		plugins: [
+			svelteSVG(),
 			replace({
 				preventAssignment: true,
 				values:{
