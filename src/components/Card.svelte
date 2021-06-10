@@ -4,7 +4,7 @@
 
 <div class="card">
   {#if src}
-    <img class="card__img" width=380 height=250 src={src} alt="img"/>
+    <img class="card__img" width=320 height=200 src={src} alt="img"/>
   {/if}
   <div class="card__header">
     <slot name="header"></slot>
@@ -19,12 +19,14 @@
 
 <style>
 .card {
+  margin: 1rem;
+  max-width: 320px;
   background-color: #fff;
   border-radius: 1rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 4fr 1fr 2fr 1fr;
-  width: 380px;
+  width: 320px;
   box-shadow: 0px 3px 10px 2px rgba(0,0,0,0.52);
 }
 .card__img {

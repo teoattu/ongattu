@@ -1,4 +1,5 @@
 <script>
+	import Footer from '../components/Footer.svelte';
 	import Nav from '../components/Nav.svelte';
 
 	import '../css/global.css'
@@ -14,3 +15,4 @@
 	<!-- <img src="./images/homepageBg.png"/> -->
 	<slot></slot>
 </main>
+<Footer/>
