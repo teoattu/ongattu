@@ -39,8 +39,10 @@
 							<img class="logo" alt="attu logo" src="./images/logoNoBg.png"/>
 						</li>
 					{/if}
-					<li class="menu__item" on:click="{()=>goto('/cinesuntem')}">
-						<h4>Despre Noi</h4>
+					<li class="menu__item">
+						<a href="/cinesuntem">
+							<h4>Despre Noi</h4>
+						</a>
 					</li>
 					<li class="menu__item">
 						<h4>Activitățile Noastre	</h4>
