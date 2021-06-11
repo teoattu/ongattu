@@ -2,6 +2,7 @@
 
 	import { onMount } from 'svelte';
 	import Button from './Button.svelte'
+	import { goto } from '@sapper/app';
 
 	import '../css/global.css';
 	
@@ -38,7 +39,7 @@
 							<img class="logo" alt="attu logo" src="./images/logoNoBg.png"/>
 						</li>
 					{/if}
-					<li class="menu__item">
+					<li class="menu__item" on:click="{()=>goto('/cinesuntem')}">
 						<h4>Despre Noi</h4>
 					</li>
 					<li class="menu__item">

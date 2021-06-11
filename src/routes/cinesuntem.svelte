@@ -1,6 +1,10 @@
+<svelte:head>
+	<title>Welcome</title>
+</svelte:head>
+
 <script>
   import RoundImage from "../components/RoundImage.svelte";
-import "../css/global.css";
+  import "../css/global.css";
 </script>
 
 <div class="wrapper">
