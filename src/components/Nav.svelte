@@ -21,8 +21,11 @@
 <nav on:blur="{() => {isOpen = false}}">
 	<ul>
 		{#if windowWidth > 720 }
+		
 			<li class="nav__logo">
-				<img class="logo" alt="attu logo" src="./images/logoNoBg.png"/>
+				<a href="/">
+					<img class="logo" alt="attu logo" src="./images/logoNoBg.png"/>
+				</a>
 			</li>
 		{:else}
 			<li class="nav__burger">
@@ -36,7 +39,9 @@
 				<ul class="nav__routes">
 					{#if windowWidth < 720 }
 						<li class="nav__logo logo__small">
-							<img class="logo" alt="attu logo" src="./images/logoNoBg.png"/>
+							<a href="/">
+								<img class="logo" alt="attu logo" src="./images/logoNoBg.png"/>
+							</a>
 						</li>
 					{/if}
 					<li class="menu__item">
@@ -45,19 +50,27 @@
 						</a>
 					</li>
 					<li class="menu__item">
-						<h4>Activitățile Noastre	</h4>
+						<a href="/activitati">
+							<h4>Activitățile Noastre	</h4>
+						</a>
 					</li>
 					<li class="menu__item">
-						<h4>Implică-te</h4>
+						<a href="/implicate">
+							<h4>Implică-te</h4>
+						</a>
 					</li>
 					<li class="menu__item">
-						<h4>Contact</h4>
+						<a href="/contact">
+							<h4>Contact</h4>
+						</a>
 					</li>
 				</ul>
 			</li>
 			
 			<li class="nav__btn">
-				<Button type="primary">Donează</Button> 
+				<a href="/doneaza">
+					<Button type="primary">Donează</Button> 
+				</a>
 			</li>
 		{/if}
 	</ul>
@@ -69,6 +82,10 @@ nav {
   top: 0;
   width: 100%;
   height: 64px;
+}
+a {
+	color: #000;
+  text-decoration: none;
 }
 nav > ul {
 	margin: 0;

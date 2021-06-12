@@ -8,7 +8,8 @@
 <style>
   .rounded__image {
     border-radius: 50%;
-    width: 480px;
-    height: 480px;
+    width: 620px;
+    height: 620px;
+    object-fit: cover;
   }
 </style>

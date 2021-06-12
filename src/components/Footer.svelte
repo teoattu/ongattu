@@ -4,7 +4,7 @@
 
 <div class="footer">
   <div class="footer__hr">
-    <hr width="100%" />
+    <hr width="80%" />
   </div>
   <div class="footer__main">
     <div class="footer__container">
@@ -73,19 +73,18 @@
 
 <style>
   .footer {
-    width: 100%;
     display: flex;
     flex-direction: column;
     padding-bottom: 1rem;
     border-bottom: 0.75rem solid var(--main-blue-color);
+    overflow-x: hidden;
   }
   .footer__main {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
+    display: flex;
+    flex-direction: row;
   }
   .footer__container {
-    padding: 1rem 4rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
   }
@@ -93,7 +92,6 @@
     padding: 1rem 3rem;
   }
   .footer__copyright {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
