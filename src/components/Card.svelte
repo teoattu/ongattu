@@ -28,10 +28,13 @@
   grid-template-rows: 4fr 1fr 2fr 1fr;
   width: 320px;
   box-shadow: 0px 3px 10px 2px rgba(0,0,0,0.52);
+  
 }
 .card__img {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
+  object-fit: cover;
+
 }
 .card__header{
   padding: 0.5rem 1rem;

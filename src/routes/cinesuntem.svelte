@@ -60,6 +60,7 @@
       </svg>
     </div>
     <h3>Valori</h3>
+    <br/>
     <div class="cinesuntem__valori">
       <div class="cinesuntem__valori__text">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -97,10 +98,38 @@
         </svg>
         <h3 style="padding:0.5rem">Implicare</h3>
       </div>
-  
     </div>
-
-
+  </section>
+  <section class="cinesuntem__sponsori">
+    <h3>Partenerii Nostri</h3>
+    <p style="text-align: center;">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor
+    </p>
+    <div class="cinesuntem__sponsori__logos">
+      <img src="/images/parteneri/Albalact.png" class="cinesuntem__sponsori__logo" alt="sponsor"/>
+      <img src="/images/parteneri/AMC.png" class="cinesuntem__sponsori__logo" alt="sponsor"/>
+      <img src="/images/parteneri/ASE.png" class="cinesuntem__sponsori__logo" alt="sponsor"/>
+      <img src="/images/parteneri/Autonom-rent-a-car.jpg" class="cinesuntem__sponsori__logo" alt="sponsor"/>
+      <img src="/images/parteneri/Banca_Transilvania.png" class="cinesuntem__sponsori__logo" alt="sponsor"/>
+      <img src="/images/parteneri/Bebetei.png" class="cinesuntem__sponsori__logo" alt="sponsor"/>
+      <img src="/images/parteneri/Bosch-Logo.png" class="cinesuntem__sponsori__logo" alt="sponsor"/>
+      <img src="/images/parteneri/Cora.png" class="cinesuntem__sponsori__logo" alt="sponsor"/>
+      <img src="/images/parteneri/erasmus.jpg" class="cinesuntem__sponsori__logo" alt="sponsor"/>
+      <img src="/images/parteneri/Furnizorul.png" class="cinesuntem__sponsori__logo" alt="sponsor"/>
+      <img src="/images/parteneri/galantomm.png" class="cinesuntem__sponsori__logo" alt="sponsor"/>
+      <img src="/images/parteneri/ismb.png" class="cinesuntem__sponsori__logo" alt="sponsor"/>
+      <img src="/images/parteneri/international.png" class="cinesuntem__sponsori__logo" alt="sponsor"/>
+      <img src="/images/parteneri/logo-autonom.jpg" class="cinesuntem__sponsori__logo" alt="sponsor"/>
+      <img src="/images/parteneri/Michelin.png" class="cinesuntem__sponsori__logo" alt="sponsor"/>
+      <img src="/images/parteneri/Pepsi.png" class="cinesuntem__sponsori__logo" alt="sponsor"/>
+      <img src="/images/parteneri/Renault.png" class="cinesuntem__sponsori__logo" alt="sponsor"/>
+      <img src="/images/parteneri/s3.jpg" class="cinesuntem__sponsori__logo" alt="sponsor"/>
+      <img src="/images/parteneri/techsoup.png" class="cinesuntem__sponsori__logo" alt="sponsor"/>
+      <img src="/images/parteneri/tw.jpg" class="cinesuntem__sponsori__logo" alt="sponsor"/>
+      <img src="/images/parteneri/VMS.png" class="cinesuntem__sponsori__logo" alt="sponsor"/>
+      <img src="/images/parteneri/Wise.png" class="cinesuntem__sponsori__logo" alt="sponsor"/>
+    </div>
   </section>
 </div>
 
@@ -165,7 +194,6 @@
   }
   .cinesuntem__valori__text {
     display: flex;
-    justify-content: center;
     align-items: center;
   }
   .cinesuntem__valori {
@@ -174,5 +202,23 @@
     grid-template-rows: auto;
     row-gap: 2rem;
     column-gap: 2rem;
+  }
+  .cinesuntem__sponsori {
+    height: 100vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .cinesuntem__sponsori__logos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 2rem;
+  }
+  .cinesuntem__sponsori__logo{
+    height: 100px;
+    padding: 1rem;
   }
 </style>

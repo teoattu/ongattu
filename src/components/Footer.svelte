@@ -82,6 +82,8 @@
   .footer__main {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   .footer__container {
     padding: 1rem;
