@@ -5,11 +5,8 @@
 <div class="error">
   <div class="error__message">
     <div class="error__text">
-      <h2>OOPS...</h2>
-      <h3>Under Construction</h3>
-      <a href="/">
-        <h4>Back to homescreen</h4>
-      </a>
+      <h1>OOPS...</h1>
+      <h3>Ai ajuns la momentul nepotrivit!</h3>
     </div>
   </div>
 </div>
@@ -28,8 +25,8 @@
     width: clamp(300px, 100%, 540px);
     display: flex;
     padding: 3rem;
+    padding-top: 230px;
     flex-direction: column;
-    padding-top: 10rem;
     align-items: center;
   }
 </style>

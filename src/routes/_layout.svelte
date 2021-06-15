@@ -1,5 +1,6 @@
 <script>
-	import Footer from '../components/Footer.svelte';
+	import Err404 from '../components/Err404.svelte';
+import Footer from '../components/Footer.svelte';
 	import Nav from '../components/Nav.svelte';
 
 	import '../css/global.css'
@@ -13,6 +14,7 @@
 <Nav />
 <main>
 	<!-- <img src="./images/homepageBg.png"/> -->
-	<slot></slot>
+	<Err404/>
+	<!-- <slot></slot> -->
 </main>
 <Footer/>
