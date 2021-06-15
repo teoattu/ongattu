@@ -15,7 +15,7 @@
   .error{
     height: 100vh;
     padding-top: 64px;
-    background-image: url("/images/error/error404.png");
+    background-image: url("/images/error/error_fundal.png");
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
