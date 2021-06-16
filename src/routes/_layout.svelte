@@ -11,10 +11,10 @@ import Footer from '../components/Footer.svelte';
 </style>
 
 
-<Nav />
+<!-- <Nav /> -->
 <main>
 	<!-- <img src="./images/homepageBg.png"/> -->
 	<Err404/>
 	<!-- <slot></slot> -->
 </main>
-<Footer/>
+<!-- <Footer/> -->

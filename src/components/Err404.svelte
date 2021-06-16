@@ -29,4 +29,18 @@
     flex-direction: column;
     align-items: center;
   }
+  @media only screen and (max-width: 720px) {
+    .error {
+      background-image: url("/images/error/error_mobile.png"); 
+    }
+    .error__message {
+      padding-top: 300px;
+    }
+    .error__text > h1 {
+      font-size: 3rem;
+    }
+    .error__text > h3 {
+      font-size: 1.5rem;
+    }
+  }
 </style>
