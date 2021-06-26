@@ -11,11 +11,9 @@ import DropDownListItem from "../components/DropDownListItem.svelte";
 
 <div class="wrapper">
   <section class="index__main">
-    <h2>Fermentum Posuere</h2>
+    <h1>Bună, noi suntem attu!</h1>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lectus
-      velit, luctus volutpat enim vel, vulputate tincidunt enim. Sed pretium
-      rutrum elit. Ut egestas rhoncus nisi ut ullamcorper.
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea.
     </p>
     <div class="index__button__wrapper">
       <Button type="outlined">Cunoaște-ne mai bine</Button>
@@ -82,13 +80,13 @@ import DropDownListItem from "../components/DropDownListItem.svelte";
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
 
     <div class="index__activitati__cardarea">
-      <Card src="/images/main/Educatie.jpeg">
-        <h3 slot="header">Educație</h3>
+      <Card src="/images/index/Educatie.jpeg">
+        <h4 slot="header">Educație</h4>
         <span slot="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus est non purus posuere feugiat</span>
         <span slot="footer">Afla mai multe </span>
       </Card>
-      <Card src="/images/main/Social.jpg">
-        <h3 slot="header">Social</h3>
+      <Card src="/images/index/Social.jpg">
+        <h4 slot="header">Social</h4>
         <span slot="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus est non purus posuere feugiat</span>
         <span slot="footer">Afla mai multe </span>
       </Card>
@@ -200,13 +198,13 @@ import DropDownListItem from "../components/DropDownListItem.svelte";
   }
   .index__main {
     height: 100vh;
-    padding-top: 64px;
+    padding-top: 72px;
     padding-left: 2rem;
     padding-right: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url("/images/index__section__1.jpeg");
+    background-image: url("/images/index/row-1-col-1.png");
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -234,7 +232,7 @@ import DropDownListItem from "../components/DropDownListItem.svelte";
     flex-direction: column;
     padding: 3rem;
     align-items: flex-end;
-    background-image: url("/images/index__section__2.png");
+    background-image: url("/images/index/row-2-col-1.png");
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -284,7 +282,7 @@ import DropDownListItem from "../components/DropDownListItem.svelte";
     align-items: center;
     padding: 3rem;
     padding-top: 5rem;
-    background-image: url("/images/index__section__3.png");
+    background-image: url("/images/index/row-3-col-1.png");
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -312,7 +310,7 @@ import DropDownListItem from "../components/DropDownListItem.svelte";
     flex-direction: column;
     align-items: center;
     padding-top: 5rem;
-    background-image: url("/images/index__section__4.png");
+    background-image: url("/images/index/row-4-col-1.png");
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;

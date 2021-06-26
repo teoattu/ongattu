@@ -16,7 +16,7 @@
   </div>
 </div>
 
-<style>
+<style lang="scss">
   .error__text > h1 {
     font-weight: 800;
   }
@@ -48,12 +48,6 @@
       padding-left: 55px;
       padding-right: 55px;
       padding-top: 300px;
-    }
-    .error__text > h1 {
-      font-size: 3rem;
-    }
-    .error__text > h3 {
-      font-size: 1.5rem;
     }
   }
 </style>

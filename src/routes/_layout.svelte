@@ -14,7 +14,7 @@ import Footer from '../components/Footer.svelte';
 <Nav />
 <main>
 	<!-- <img src="./images/homepageBg.png"/> -->
-	<Err404/>
-	<!-- <slot></slot> -->
+	<!-- <Err404/> -->
+	<slot></slot>
 </main>
-<!-- <Footer/> -->
+<Footer/>

@@ -66,37 +66,37 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <circle id="Ellipse_340" data-name="Ellipse 340" cx="12" cy="12" r="12" fill="#100abf"/>
         </svg>
-        <h3 style="padding:0.5rem">Solidaritate</h3>
+        <h4 style="padding:0.5rem">Solidaritate</h4>
       </div>
       <div class="cinesuntem__valori__text">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <circle id="Ellipse_340" data-name="Ellipse 340" cx="12" cy="12" r="12" fill="#100abf"/>
         </svg>
-        <h3 style="padding:0.5rem">Umanitate</h3>
+        <h4 style="padding:0.5rem">Umanitate</h4>
       </div>
       <div class="cinesuntem__valori__text">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <circle id="Ellipse_340" data-name="Ellipse 340" cx="12" cy="12" r="12" fill="#100abf"/>
         </svg>
-        <h3 style="padding:0.5rem">Integritate</h3>
+        <h4 style="padding:0.5rem">Integritate</h4>
       </div>
       <div class="cinesuntem__valori__text">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <circle id="Ellipse_340" data-name="Ellipse 340" cx="12" cy="12" r="12" fill="#100abf"/>
         </svg>
-        <h3 style="padding:0.5rem">Egalitate</h3>
+        <h4 style="padding:0.5rem">Egalitate</h4>
       </div>
       <div class="cinesuntem__valori__text">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <circle id="Ellipse_340" data-name="Ellipse 340" cx="12" cy="12" r="12" fill="#100abf"/>
         </svg>
-        <h3 style="padding:0.5rem">Incluziune</h3>
+        <h4 style="padding:0.5rem">Incluziune</h4>
       </div>
       <div class="cinesuntem__valori__text">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <circle id="Ellipse_340" data-name="Ellipse 340" cx="12" cy="12" r="12" fill="#100abf"/>
         </svg>
-        <h3 style="padding:0.5rem">Implicare</h3>
+        <h4 style="padding:0.5rem">Implicare</h4>
       </div>
     </div>
   </section>
@@ -198,10 +198,11 @@
   }
   .cinesuntem__valori {
     display: grid;
+    padding: 8rem 0 5rem 0;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    row-gap: 2rem;
-    column-gap: 2rem;
+    row-gap: 4rem;
+    column-gap: 8rem;
   }
   .cinesuntem__sponsori {
     height: 100vh;
@@ -216,9 +217,10 @@
     flex-wrap: wrap;
     width: 100%;
     padding: 2rem;
+    /* padding-top: 5rem; */
   }
   .cinesuntem__sponsori__logo{
     height: 100px;
-    padding: 1rem;
+    padding: 2rem;
   }
 </style>

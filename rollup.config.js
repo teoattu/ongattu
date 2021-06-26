@@ -9,11 +9,22 @@ import { terser } from 'rollup-plugin-terser';
 import config from 'sapper/config/rollup.js';
 import pkg from './package.json';
 import { svelteSVG } from "rollup-plugin-svelte-svg";
+import sveltePreprocess from 'svelte-preprocess';
+
 
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
 const legacy = !!process.env.SAPPER_LEGACY_BUILD;
+
+const preprocess = sveltePreprocess({
+  scss: {
+    includePaths: ['src'],
+  },
+  postcss: {
+    plugins: [require('autoprefixer')],
+  },
+});
 
 const onwarn = (warning, onwarn) =>
 	(warning.code === 'MISSING_EXPORT' && /'preload'/.test(warning.message)) ||
@@ -34,6 +45,7 @@ export default {
 				},
 			}),
 			svelte({
+				preprocess,
 				compilerOptions: {
 					dev,
 					hydratable: true
@@ -88,6 +100,7 @@ export default {
 				},
 			}),
 			svelte({
+				preprocess,
 				compilerOptions: {
 					dev,
 					generate: 'ssr',
