@@ -65,11 +65,12 @@
       <div class="nav__routes">
         <a href="/cinesuntem"><h4>Despre Noi</h4></a>
         <a href="/activitati"><h4>Activitătile Noastre</h4></a>
-        <a href="/cinesuntem"><h4>Implică-te!</h4></a>
-        <a href="/cinesuntem"><h4>Contact</h4></a>
+        <a href="/implicate"><h4>Implică-te!</h4></a>
+        <a href="/contact"><h4>Contact</h4></a>
       </div>
       <div class="nav__button">
-        <Button type="primary">Donează</Button>
+        <a href="/doneaza"><Button type="primary">Donează</Button></a>
+        
       </div>
 		</div>
 	{/if}
@@ -77,52 +78,46 @@
 
 <style lang="scss">
   .nav {
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
-    background-color: #ffffff55;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 1rem;
-    @media (min-width:1200px) {
-      background-color: #ffffff00;
-      flex-direction: row;
-      padding: 50px 145px;
-      position: absolute;
-      padding-bottom: 0;
-    }
-    &__icon {
-      width: 3rem;
-      height: 3rem;
-      margin: 1rem;
+    @media (max-width:1024px) {
+      background-color: #ffffff;
+      position: fixed;
     }
     &__bar {
-      width: 100%;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      @media (min-width: 1200px) {
-        width: calc(100% - 2*145px);
-        flex-direction: row;
-      }
+      justify-content: space-between;
+      padding: 50px 135px;
+      
+      @media (max-width:1024px) {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        padding-bottom: 1rem;
+      } 
     }
+
     &__routes {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      flex-grow: 2;
+      padding-left: 120px;
       a {
-        padding: 0 37px;
+        margin: 0 37px;
       }
       h4 {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
       }
-			@media (min-width: 1200px) {
-				flex-direction: row;
-        justify-content: center;
-        // padding: 0 3rem;
-        padding-left: 10rem;
-			}
+      @media (max-width:1024px) {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+      }
+    }
+    &__icon {
+      width: 50px;
+      height: 50px;
+      padding: 1rem;
     }
   }
 </style>

@@ -13,7 +13,7 @@ import DropDownListItem from "../components/DropDownListItem.svelte";
   <section class="index__main">
     <h1>Bună, noi suntem attu!</h1>
     <p>
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea.
+      Bine ai venit la noi! Acum, în 2021 suntem o organizație cu multe proiecte sociale și educaționale. Dar nu a fost mereu așa. Pentru noi, totul a început în 2014, când în prag de iarnă am vrut să ajutăm copiii să simtă bucuria Crăciunului.
     </p>
     <div class="index__button__wrapper">
       <Button type="outlined">Cunoaște-ne mai bine</Button>
@@ -83,12 +83,12 @@ import DropDownListItem from "../components/DropDownListItem.svelte";
       <Card src="/images/index/Educatie.jpeg">
         <h4 slot="header">Educație</h4>
         <span slot="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus est non purus posuere feugiat</span>
-        <span slot="footer">Afla mai multe </span>
+        <span slot="footer"><a href="/">Afla mai multe </a></span>
       </Card>
       <Card src="/images/index/Social.jpg">
         <h4 slot="header">Social</h4>
         <span slot="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus est non purus posuere feugiat</span>
-        <span slot="footer">Afla mai multe </span>
+        <span slot="footer"><a href="/">Afla mai multe </a> </span>
       </Card>
     </div>
   </section>
@@ -254,7 +254,6 @@ import DropDownListItem from "../components/DropDownListItem.svelte";
     padding-left: 1rem;
   }
   .index__7ani__listitem__textarea > h4 {
-    font-size: 1.5rem;
     padding: 0;
     margin: 0;
   }
@@ -296,9 +295,15 @@ import DropDownListItem from "../components/DropDownListItem.svelte";
     justify-content: space-evenly;
     overflow-x: auto;
   }
-  @media only screen and (max-width: 720px) {
+  @media only screen and (max-width: 1024px) {
+    .index__activitati {
+      height: 120vh;
+    }
     .index__activitati__cardarea {
-      justify-content: flex-start;
+      flex-direction: column;
+    }
+    h4 {
+      font-size: 1.25rem;
     }
   } 
 

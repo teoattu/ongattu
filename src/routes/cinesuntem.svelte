@@ -18,20 +18,26 @@
 
 <div class="cinesuntem">
   <section class="cinesuntem__main">
-    {#if windowWidth }
     <div class="cinesuntem__main__img">
-      <RoundImage src={"/images/cinesuntem/cinesuntem.jpg"} width={windowWidth < 1024 ? 320 : 640} height={windowWidth < 1024 ? 320 : 640}/>
-    </div>
-    {/if}
+        {#if windowWidth && windowWidth > 1024}
+          <RoundImage src={"/images/cinesuntem/cinesuntem.jpg"} width={windowWidth < 1024 ? 320 : 640} height={windowWidth < 1024 ? 320 : 640}/>
+        {:else}
+          <img src="/images/cinesuntem/smCine.png" width={320}/>
+        {/if}
+        
+      </div>
+    
     <div class="textArea">
       <h2>CINE SUNTEM</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit necessitatibus quae ullam ex dolorum incidunt officiis asperiores. Blanditiis quas vel dolorem nihil quibusdam? Perspiciatis impedit ipsum quas neque itaque enim beatae, officiis omnis nemo corporis error odio quibusdam minus alias laboriosam placeat, assumenda nulla dolorem id quasi. Dolorem, placeat fugit.</p>
+      <p>Înființată în 2014, mai întâi timid, cu activități modeste, de natură socială, dar apoi cu implicare, attu a crescut!</p>
+      <p>An de an noi voluntari s-au alăturat misiunii, și au adus cu ei entuziasm, idei, si o puternică dorință de rezolva problemele comunității! De la elevi și studenți, la  profesioniști în diverse domenii de activitate, fiecare a contribuit! </p>
+      <p>Iar acum, putem spune cu mândrie că organizăm pe lângă 4 campanii deja cu tradiție - de 1 septembrie, Crăciun, Paște și 1 iunie - și activități de educaționale.</p>
     </div>
   </section>
   <section class="cinesuntem__second">
     <div class="cinesuntem__second__box">
       <h3>Viziune</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laboriosam maxime aspernatur.</p>
+      <p>În attu, noi ne dorim să fim o forță care generează schimbări pozitive și durabile pentru societate.</p>
       {#if windowWidth > 1024}
         <svg height="64" width="1">
           <line x1="0" y1="0" x2="0" y2="200" style="stroke:rgb(0,0,0);stroke-width:2" />
@@ -39,19 +45,20 @@
         </svg>
       {:else}
       <!-- 56 comes from padding left+right -->
-        <img src="/images/cinesuntem/cinesuntem.jpg" width={windowWidth-56}/>
+        <img src="/images/cinesuntem/viziune.jpg" width={windowWidth-56}/>
       {/if}
     </div>
     <div class="cinesuntem__second__box">
       <h3>Misiunea</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas laboriosam maxime aspernatur.</p>
+      <p>Misiunea noastră este să sprijinim grupurile sociale defavorizate din România prin acțiuni cu scop educațional și social.</p>
+      <p>Încă din 2014, proiectele noastre au fost desfășurate de către specialiști în domeniile pedagogiei, psihologiei și sociologiei, având ca scop principal îmbunătățirea vieții persoanelor din mediile defavorizate. </p>
       {#if windowWidth > 1024}
         <svg height="64" width="1">
           <line x1="0" y1="0" x2="0" y2="200" style="stroke:rgb(0,0,0);stroke-width:2" />
           Sorry, your browser does not support inline SVG.
         </svg>
       {:else}
-        <img src="/images/cinesuntem/cinesuntem.jpg" width={windowWidth-56}/>
+        <img src="/images/cinesuntem/misiune.jpg" width={windowWidth-56}/>
       {/if}
     </div>
     <div class="cinesuntem__second__box">
@@ -59,27 +66,27 @@
       <div class="valori">
         <div class="valori__item">
           <h4>Solidarite</h4>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, quia!</p>
+          <p>Pentru că doar fiind alături de grupurile defavorizate putem să le transformăm viața într-una mai bună.</p>
         </div>
         <div class="valori__item">
-          <h4>Solidarite</h4>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, quia!</p>
+          <h4>Umanitate</h4>
+          <p>Pentru că doar prin umanitate și compasiune putem înțelege greul prin care grupurile defavorizate trec.</p>
         </div>
         <div class="valori__item">
-          <h4>Solidarite</h4>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, quia!</p>
+          <h4>Integritate</h4>
+          <p>Pentru că vrem să fim un model de profesionalism în relațiile cu colaboratorii și beneficiarii activităților noastre.</p>
         </div>
         <div class="valori__item">
-          <h4>Solidarite</h4>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, quia!</p>
+          <h4>Incluziune</h4>
+          <p>Pentru că suntem la fel de puternici pe cât suntem de uniți, și la fel de slabi pe cât de dezbinați.</p>
         </div>
         <div class="valori__item">
-          <h4>Solidarite</h4>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, quia!</p>
+          <h4>Implicare</h4>
+          <p>Pentru că doar prin acțiunea colectivă putem aduce o schimbarea pozitivă.</p>
         </div>
         <div class="valori__item">
-          <h4>Solidarite</h4>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, quia!</p>
+          <h4>Egalitate</h4>
+          <p>Pentru că și grupurile defavorizate merită o șansă la o viață mai bună.</p>
         </div>
       </div>
     </div>

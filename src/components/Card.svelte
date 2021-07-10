@@ -1,11 +1,23 @@
 <script>
   export let src;
+  import { onMount } from "svelte";
+
+  let windowWidth;
+  onMount(() => {
+    if (typeof window !== undefined) {
+      windowWidth = window.innerWidth;
+    }
+  });
 </script>
 
 <div class="card">
   {#if src}
-    <img class="card__img" width=320 height=200 src={src} alt="img"/>
-  {/if}
+    <div class="card__img" style="background-image: url({src});">
+    </div>
+    {/if}
+  <!-- {#if src}
+    <img class="card__img" src={src} alt="img"/>
+  {/if} -->
   <div class="card__header">
     <slot name="header"></slot>
   </div>
@@ -17,23 +29,37 @@
   </div>
 </div>
 
-<style>
+<style lang="scss">
 .card {
   margin: 1rem;
-  max-width: 320px;
   background-color: #fff;
   border-radius: 1rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 4fr 1fr 2fr 1fr;
+  display: flex;
+  flex-direction: column;
   width: 320px;
   box-shadow: 0px 3px 10px 2px rgba(0,0,0,0.52);
-  
+  // max-height: 720px;
+  @media (min-width: 1024px) {
+    width: 500px;
+  }
 }
 .card__img {
+  width: 100%;
+  height: 200px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
-  object-fit: cover;
+  @media (min-width: 1024px) {
+    height: 300px;
+    
+  }
+  /* width: 100%;
+  height: 60%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  object-fit: cover; */
 
 }
 .card__header{
@@ -41,8 +67,12 @@
 }
 .card__content{
   padding: 0.5rem 1rem;
+  flex-grow: 1;
+
 }
 .card__footer {
   padding: 0.5rem 1rem;
+  justify-self: flex-end;
+  margin-bottom: 20px;
 }
 </style>
