@@ -151,6 +151,9 @@ import SocialMedia from "../components/SocialMedia.svelte";
     </div>
   </section>
   <SocialMedia/>
+  <br/>
+  <br/>
+  <br/>
 </div>
 
 <style lang="scss">
@@ -175,20 +178,25 @@ import SocialMedia from "../components/SocialMedia.svelte";
   .contact {
     // padding: 1rem 2rem;
     padding-top: 64px;
-    // background-image: url("/images/contact/background.png");
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @media screen and (min-width: 1024px) {      
+      background-image: url("/images/contact/lgBackground.png");
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
     &__main {
       display: flex;
       padding-top: 80px;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+
       @media (min-width:1024px) {
         flex-direction: row-reverse;
         justify-content: space-between;
         padding: 80px 135px;
+        height: 80vh;
+
 
       }
     }
