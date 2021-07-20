@@ -64,7 +64,7 @@
 			</a>
       <div class="nav__routes">
         <a href="/cinesuntem"><h4>Despre Noi</h4></a>
-        <a href="/activitati"><h4>Activitătile Noastre</h4></a>
+        <a href="/activitati"><h4>Activitățile Noastre</h4></a>
         <a href="/implicate"><h4>Implică-te!</h4></a>
         <a href="/contact"><h4>Contact</h4></a>
       </div>

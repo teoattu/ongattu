@@ -5,6 +5,7 @@
   import Button from '../components/Button.svelte';
   import MobilePaySvg from '../components/MobilePaySvg.svelte';
   import { onMount } from 'svelte';
+import SocialMedia from '../components/SocialMedia.svelte';
   let windowWidth;
   onMount(() => {
     if (typeof window !== undefined) {
@@ -17,6 +18,8 @@
   <section class="doneaza__main">
     {#if windowWidth > 1024}
       <h2>Când donezi pentru o cauză nobilă, câștigi mai mult decât pierzi </h2>
+      <br>
+      <br>
       <div class="doneaza__main__content">
         <div>
           <img src='/images/doneaza/lgCloud.png' height="450" width="850" alt="lg cloud"/>
@@ -81,6 +84,9 @@
       </div>
     {/if}
   </section>
+  <SocialMedia/>
+  <br>
+  <br>
 
 </div>
 
@@ -90,11 +96,11 @@
     flex-direction: column;
     padding-top: 20px;
     align-items: center;
-    h3, p {
+    h3, h4, p {
         text-align: center;
     }
     @media screen and (min-width: 1024px) {
-      h3, p {
+      h3, h4, p {
         text-align: start;
       } 
     }
@@ -120,7 +126,7 @@
       }
       
       @media (min-width:1024px) {
-        padding: 80px 135px;
+        padding: 180px 135px;
       }
     }
   }
